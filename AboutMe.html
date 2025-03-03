@@ -4,28 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>projects</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="AboutMe.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body>
 
-  <div class="title-box">
-  <header>
-<h1>PROJECTS </h1>
-</div>
-
-<div class="accordion-MainMenuItem">
-  <button class="accordion-MainMenuHeader" onclick="toggleAccordion('Main')">
-    Main Menu
-  </button>
-  <div class="accordion-MainMenucontent" id="Main">
-    <a href="index.html"><i class="fas fa-home"></i>    Home</a>
-    <a href="AboutMe.html"><i class="fas fa-home"></i>    About Me</a>
-    <a href="portfolio.html"><i class=" fas fa-briefcase"> </i>    Past work experience</a>
-    <a href="Projects.Html"><i class="fas fa-industry"></i>   Projects</a>
-    <a href="Certificates.html"><i class=" fas fa-certificate"></i>   Certificates</a>
-  </div>
-</div>
+  <header class="aboutme-header">
+    <h1>ABOUT ME</h1>
+  
+    <div class="aboutme-MainMenuItem">
+      <button class="aboutme-MainMenuHeader" onclick="toggleAccordion('Main')">
+        Main Menu
+      </button>
+      <div class="aboutme-MainMenucontent" id="Main">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="projects.html"><i class="fas fa-industry"></i> Projects</a>
+        <a href="pastexperience.html"><i class="fas fa-briefcase"></i> Past Work Experience</a>
+        <a href="skills.html"><i class="fas fa-tasks"></i> Skills</a>
+        <a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a>
+      </div>
+    </div>
+  </header>
 
 <main class="profile-container">
   <!-- Sidebar -->
@@ -34,7 +33,7 @@
       <img src="Profile/profile.jpg" alt="Profile Picture">
     </div>
     <div class="profile-summary">
-      <h2>HARMEET PAL SINGH</h2>
+      <h1>HARMEET PAL SINGH</h1>
       <p>BIM Specialist</p>
       <p>13 years in Singapore</p>
     </div>
@@ -110,7 +109,19 @@
     </article>
   </section>
 </main>
-</main>
+
+<footer>
+
+  <p> Disclaimer: This website has been prepared by HTML code with the help of AI.</p>
+
+</footer>
+
+<script>
+  function toggleAccordion(id) {
+    var content = document.getElementById(id);
+    content.classList.toggle("active");
+  }
+</script>
 </body>
 </html>
     

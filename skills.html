@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills & Software Proficiency</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="skills.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body>
 
-  <div class="title-box">
-  <header>
-<h1>SKILLS & SOFTWARE PROFICIENCY </h1>
-</div>
-
-<div class="accordion-MainMenuItem">
-  <button class="accordion-MainMenuHeader" onclick="toggleAccordion('Main')">
-    Main Menu
-  </button>
-  <div class="accordion-MainMenucontent" id="Main">
-    <a href="index.html"><i class="fas fa-home"></i>    Home</a>
-    <a href="portfolio.html"><i class=" fas fa-briefcase"> </i>    Past work experience</a>
-    <a href="Projects.Html"><i class="fas fa-industry"></i>   Projects</a>
-    <a href="Certificates.html"><i class=" fas fa-certificate"></i>   Certificates</a>
-  </div>
-</div>
+  <header class="skills-header">
+    <h1>SKILLS & PERSONAL DEVELOPMENT</h1>
+  
+    <!-- Main Menu Container -->
+    <div class="accordion-MainMenuItem">
+      <button class="accordion-MainMenuHeader" onclick="toggleAccordion('Main')">
+        Main Menu
+      </button>
+      <div class="accordion-MainMenucontent" id="Main">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="AboutMe.html"><i class="fas fa-user"></i> About Me</a>
+        <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
+        <a href="pastexperience.html"><i class="fas fa-tasks"></i> Past Work Experience</a>
+        <a href="certificates.html"><i class="fas fa-certificate"></i> Certificates (U/C)</a>
+      </div>
+    </div>
+  </header>
 
   <main>
 
@@ -119,8 +120,9 @@
   </main>
 
   <footer>
-    <p><a href="index.html">Back to Home</a></p>
+    <p> Disclaimer: This website has been prepared by HTML code with the help of AI.</p>
   </footer>
+
   <script>
     function toggleAccordion(id) {
       var content = document.getElementById(id);

@@ -1,0 +1,156 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Example font */
+  }
+  
+  /* Header Section */
+  .skills-header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Ensures child elements are positioned relative to the header */
+    z-index: 1;         /* Keeps header above normal flow items if needed */
+  }
+  .skills-header h1 {
+    margin: 0 0 10px;
+  }
+  
+/* Main Menu Container */
+.accordion-MainMenuItem {
+    /* Keep it in normal flow so it sits below the heading */
+    width: 95%;
+    margin: 0 auto;    /* Center horizontally */
+    max-width: 600px;  /* Optional: limit width if desired */
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+  }
+  
+/* Main Menu Header (Button) */
+.accordion-MainMenuHeader {
+    background: #3f4375;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+/* Main Menu Content (Accordion) */
+.accordion-MainMenucontent {
+    display: none;           /* Hidden by default */
+    background: #f4f4f4;
+    padding: 10px;
+    margin-top: 10px;        /* Add spacing below the button */
+    border-left: 3px solid #003366;
+    border-radius: 5px;
+  }
+  
+  /* Show the menu when active */
+  .accordion-MainMenucontent.active {
+    display: block;
+  }
+  
+  /* Links inside the menu */
+  .accordion-MainMenucontent a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+  }
+  
+  .accordion-MainMenucontent a:hover {
+    background: #ddd;
+  }
+  
+  
+/* Main Menu Content (Accordion) */
+.skills-MainMenucontent {
+    display: none;           /* Hidden by default */
+    background: #f4f4f4;
+    padding: 10px;
+    margin-top: 10px;        /* Add spacing below the button */
+    border-left: 3px solid #003366;
+    border-radius: 5px;
+  }
+
+/* Skills Category Card */
+.skills-category {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Skill Item */
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  
+  /* Progress Bar */
+  .progress {
+    width: 40%;
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    height: 100%;
+  }
+  
+  /* Skill Ratings */
+  .revit { width: 80%; background: #0078D7; }
+  .obd { width: 60%; background: #0055A4; }
+  .opm { width: 40%; background: #008080; }
+  .opid { width: 40%; background: #8B0000; }
+  .ord { width: 60%; background: #4B0082; }
+  
+  /*BIM Review Tools */
+  .navisworks {width: 75%; background :#0078D7;}
+  .dalux {width: 75%; background :#0055A4;}
+  .bentleyview {width: 75%; background :#008080;}
+  .itwin {width: 75%; background :#8B0000;}
+  
+  /* BIM Management tools */
+  .projectwise {width: 75%; background :#0078D7;}
+  .bim360 {width: 75%; background :#008080;}
+  .designcollab {width: 75%; background :#8B0000;}
+  
+  /* Drafting tools */
+  .autocad {width: 75%; background :#0078D7;}
+  .ms {width: 75%; background :#0055A4;}
+  
+  /* Administrative softwares */
+  .word { width: 80%; background: #0078D7; }
+  .excel { width: 80%; background: #0055A4; }
+  .pp { width: 80%; background: #008080; }
+  .openspace { width: 60%; background: #8B0000; }
+  .powerBI { width: 50%; background: #4B0082; }
+  .powerapps { width: 60%; background: #4B0082; }
+  
+  /* Coding & API Development*/
+  .skills-dev {
+    background-color: #b9b9b954;
+    margin: 5px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    
+  }
