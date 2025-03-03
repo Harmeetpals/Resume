@@ -4,34 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>projects</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body>
 
-  <div class="title-box">
-  <header>
-<h1>PROJECTS </h1>
-</div>
+  <header class="projects-header">
+    <h1>PROJECTS</h1>
+    <div class="project-mmitem">
+      <button class="project-mmheader" onclick="toggleAccordion('Main')">
+        Main Menu
+      </button>
+      <div class="project-mmcontent" id="Main">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="AboutMe.html"><i class="fas fa-user"></i> About Me</a>
+        <a href="pastexperience.html"><i class="fas fa-briefcase"></i> Past Work Experience</a>
+        <a href="skills.html"><i class="fas fa-tasks"></i> Skills</a>
+        <a href="certificates.html"><i class="fas fa-certificate"></i> Certificates (U/C)</a>
 
-<div class="accordion-MainMenuItem">
-  <button class="accordion-MainMenuHeader" onclick="toggleAccordion('Main')">
-    Main Menu
-  </button>
-  <div class="accordion-MainMenucontent" id="Main">
-    <a href="index.html"><i class="fas fa-home"></i>    Home</a>
-    <a href="portfolio.html"><i class=" fas fa-briefcase"> </i>    Past work experience</a>
-    <a href="Projects.Html"><i class="fas fa-industry"></i>   Projects</a>
-    <a href="Certificates.html"><i class=" fas fa-certificate"></i>   Certificates</a>
-  </div>
-</div>
+      </div>
+    </div>
+  </header>
 
 <main>
-
-  <section class="intro">
-    <p>Click on a project to expand and see details.</p>
-  </section>
-
   <div class="projects-grid">
 
     <!-- Project Coco -->
@@ -370,29 +365,30 @@
 
   </div>
 </main>
-    
+<footer>
+  <p> Disclaimer: This website has been prepared by HTML code with the help of AI.</p>
+</footer>
     
 <script>
-function toggleProjectDetails(element, event) {
-  // Prevent event bubbling so inner elements don't trigger additional toggles
-  event.stopPropagation();
-  
-  // Collapse all other expanded project cards
-  document.querySelectorAll(".project-card.expanded").forEach(card => {
-    if (card !== element) {
-      card.classList.remove("expanded");
-    }
-  });
-  
-  // Toggle the 'expanded' class on the clicked project card
-  element.classList.toggle("expanded");
-}
+  function toggleProjectDetails(element, event) {
+    // Prevents accidental bubbling of event clicks
+    event.stopPropagation();
+    
+    // Close all other expanded cards before opening a new one
+    document.querySelectorAll(".project-card.expanded").forEach(card => {
+      if (card !== element) {
+        card.classList.remove("expanded");
+      }
+    });
 
-function toggleAccordion(id) {
-      var content = document.getElementById(id);
-      content.classList.toggle("active");
-    }
+    // Toggle expanded class for the clicked element
+    element.classList.toggle("expanded");
+  }
 
+  function toggleAccordion(id) {
+    var content = document.getElementById(id);
+    content.classList.toggle("active");
+  }
 </script>
     
 </body>

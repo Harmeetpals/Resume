@@ -4,19 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROFESSIONAL EXPERIENCE</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pastexperience.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </head>
 <body>
 
-  <header>
+
+  <header class="portfolio-header">
     <h1>PROFESSIONAL EXPERIENCE</h1>
-
+  
+    <!-- Main Menu Container -->
+    <div class="accordion-MainMenuItem">
+      <button class="accordion-MainMenuHeader" onclick="toggleAccordion('Main')">
+        Main Menu
+      </button>
+      <div class="accordion-MainMenucontent" id="Main">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="AboutMe.html"><i class="fas fa-user"></i> About Me</a>
+        <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
+        <a href="skills.html"><i class="fas fa-tasks"></i> Skills</a>
+        <a href="certificates.html"><i class="fas fa-certificate"></i> Certificates (U/C)</a>
+      </div>
+    </div>
   </header>
+  
 
-  <main>
-
-    <div class="accordion">
+<main>
 
 <!-- ACEPLP -->
 <div class="accordion-item">
@@ -422,14 +435,8 @@
     </div>
   </main>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
-      </ul>
-    </nav>
-    
+  <footer class="page-footer">
+    <p> Disclaimer: This website has been prepared by HTML code with the help of AI.</p>
   </footer>
 
   <script>
