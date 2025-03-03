@@ -1,0 +1,753 @@
+/* Fixed Background Image */
+.background {
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Header & Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 51, 102, 0.9);
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background: rgba(0, 34, 68, 0.8);
+  border-radius: 5px;
+}
+
+/* Accordion Styles */
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+/* Fixed Background Image */
+.background {
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.accordion-header {
+  background: #003366;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background: #f4f4f4;
+  border-left: 3px solid #003366;
+  border-radius: 5px;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+/* Project Sections */
+.project {
+  margin-top: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Icons */
+.accordion-header i {
+  margin-right: 8px;
+}
+
+/* Main Menu */
+.accordion-MainMenuItem {
+  width: 95%;
+  margin: 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.accordion-MainMenuHeader {
+  background: #3f4375;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.accordion-MainMenucontent {
+  display: none;
+  background: #f4f4f4;
+  padding: 10px;
+  border-left: 3px solid #003366;
+  border-radius: 5px;
+}
+
+.accordion-MainMenucontent a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.accordion-MainMenucontent a:hover {
+  background: #ddd
+}
+
+.active {
+  display:block;
+}
+
+.project p i {
+  font-size: 18px;
+  margin-right: 5px;
+  color: #003366;
+}
+
+/* Title */
+.title-box
+{
+  background-color: #f0f0f0;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  width: 95%;
+}
+
+/* Intro */ 
+
+.intro {
+  background-color: #d6d6d6;
+  padding : 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px, rgba(0, 0, 0, 0.1);
+  margin: 20px; 
+  width: 95%;
+}
+
+/* General Styles */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Skills Category Card */
+.skills-category {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill Item */
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+/* Progress Bar */
+.progress {
+  width: 40%;
+  background: #ddd;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+}
+
+/* Skill Ratings */
+.revit { width: 80%; background: #0078D7; }
+.obd { width: 60%; background: #0055A4; }
+.opm { width: 40%; background: #008080; }
+.opid { width: 40%; background: #8B0000; }
+.ord { width: 60%; background: #4B0082; }
+
+/*BIM Review Tools */
+.navisworks {width: 75%; background :#0078D7;}
+.dalux {width: 75%; background :#0055A4;}
+.bentleyview {width: 75%; background :#008080;}
+.itwin {width: 75%; background :#8B0000;}
+
+/* BIM Management tools */
+.projectwise {width: 75%; background :#0078D7;}
+.bim360 {width: 75%; background :#008080;}
+.designcollab {width: 75%; background :#8B0000;}
+
+/* Drafting tools */
+.autocad {width: 75%; background :#0078D7;}
+.ms {width: 75%; background :#0055A4;}
+
+/* Administrative softwares */
+.word { width: 80%; background: #0078D7; }
+.excel { width: 80%; background: #0055A4; }
+.pp { width: 80%; background: #008080; }
+.openspace { width: 60%; background: #8B0000; }
+.powerBI { width: 50%; background: #4B0082; }
+.powerapps { width: 60%; background: #4B0082; }
+
+/* Coding & API Development*/
+.skills-dev {
+  background-color: #b9b9b954;
+  margin: 5px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Transparent white */
+  backdrop-filter: blur(5px); /* Modern glass effect */
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* New Grid inside Overlay for Proper Alignment */
+.overlay-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  text-align: right;
+}
+
+.overlay-label {
+  font-weight: bold;
+  text-align: right;
+}
+
+.overlay-value {
+  text-align: left;
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Image */
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay Header (Project Name) */
+.project-overlay-header {
+  position:absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  background: rgba(255, 255, 255, 0.9);
+  border-width: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect - Overlay becomes more visible */
+.project-card:hover .project-overlay {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Project Details (Initially Hidden) */
+.project-details {
+  display: none;
+  padding: 10px;
+  text-align: left;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Expand Effect on Click */
+.project-card.expanded {
+  height: auto;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card.expanded .project-details {
+  display: block;
+  padding-top: 10px;
+}
+
+/* Expand Image when Clicked */
+.project-card.expanded img {
+  height: 200px;
+  transition: height 0.3s ease-in-out;
+}
+
+
+/* ABOUT ME.HTML */
+/* Profile Container: Two-Column Layout */
+.profile-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+.profile-sidebar {
+  flex: 1;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-sidebar .profile-pic img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-sidebar .profile-summary h2 {
+  margin: 10px 0;
+  font-size: 10px;
+  color: #003366;
+}
+
+.profile-sidebar .contact-info p {
+  margin: 5px 0;
+  font-size:small;
+}
+
+/* Main Content Styles */
+.profile-content {
+  flex: 2;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Section Card Styles */
+.section-card {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section-card h2 {
+  font-size: 1.8em;
+  color: #003366;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 10px;
+}
+
+.section-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Additional Information Grid */
+.additional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.additional-item h3 {
+  font-size: 1.3em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.additional-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.additional-item p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Home Page */
+
+/* Main Content Container (Foreground Overlay) */
+.content-container {
+  margin: 80px auto 20px;  /* leave space for fixed header */
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Current Work Section */
+.current-work h2 {
+  text-align: center;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.work-card {
+  background: #f0f0f0;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #003366;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Floating Sidebar */
+.sidebar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  height: calc(100% - 40px); /* Leaves 20px margin top and bottom */
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Drop shadow for floating effect */
+  overflow-y: auto; /* Scroll within sidebar if content exceeds height */
+}
+
+.profile-pic img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-summary h2 {
+  margin: 0 0 5px;
+  font-size: 1.3em;
+  color: #003366;
+}
+.profile-summary p {
+  margin: 3px 0;
+  font-size: 0.95em;
+  color: #666;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav a {
+  display: block;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 8px 0;
+  transition: background 0.3s;
+}
+.sidebar-nav a i {
+  margin-right: 8px;
+}
+.sidebar-nav a:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Full-Width Page Header */
+.page-header {
+  width: 100%;
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0; /* Ensure no gap between header and content */
+}
+.page-header h1 {
+  margin: 0 0 5px;
+}
+.page-header p {
+  margin: 0;
+}
+
+/* Main Content (Stretches left to right) */
+.main-content {
+  position: relative;
+  width: 100%;
+  margin-left: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+/* Current Work Section */
+.current-work {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.current-work h2 {
+  color: #003366;
+  margin-top: 0;
+}
+.work-card {
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Timeline Section */
+.timeline-section {
+  background: #fff;
+  padding: 10px;
+  margin-top: 150px;
+  margin-left: 250px;
+  margin-bottom: 20px;
+  
+}
+.timeline-section h2 {
+  color: #003366;
+  margin-top: 0;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+/* Side-by-Side Timeline Grid */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: center;
+}
+.timeline-year {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #003366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.timeline-year::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 20px;
+  height: 2px;
+  background-color: #003366;
+  transform: translateY(-50%);
+}
+.timeline-role {
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: #003366;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.timeline-role h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #003366;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.timeline-role p {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* Floating Sidebar (Underneath Header, on Right) */
+.sidebar {
+  position: fixed;
+  top: 150px; /* Leaves space for the header */
+  right: 20px;
+  width: 175px;
+
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Drop shadow for floating effect */
+  overflow-y: auto;
+  max-height: calc(100% - 290px); /* Some gap from bottom */
+}
+
+.profile-pic img {
+  width: 100px;
+align-items: center;
+  border-radius: 100%;
+  margin-bottom: 15px;
+}
+.profile-summary h2 {
+  margin: 0 0 5px;
+  font-size: 1.3em;
+  color: #003366;
+}
+.profile-summary p {
+  margin: 3px 0;
+  font-size: 0.95em;
+  color: #666;
+}
+/* Sidebar Navigation */
+.sidebar-nav a {
+  display: block;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 8px 0;
+}
+.sidebar-nav a i {
+  margin-right: 8px;
+}
+.sidebar-nav a:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Footer */
+.page-footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+  .sidebar {
+    width: 200px;
+  }
+}
+@media (max-width: 600px) {
+  /* Sidebar becomes non-fixed to avoid covering content on small screens */
+  .sidebar {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-height: none;
+    margin: 20px auto;
+  }
+  .main-content {
+    margin-bottom: 0;
+  }
+  .timeline-grid {
+    grid-template-columns: 1fr; /* Single column for timeline on mobile */
+  }
+  .timeline-year {
+    margin: 0 auto 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .timeline-year::after {
+    width: 0; /* Hide horizontal line on mobile */
+  }
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projects</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body>
+
+  <div class="title-box">
+  <header>
+<h1>PROJECTS </h1>
+</div>
+
+<div class="accordion-MainMenuItem">
+  <button class="accordion-MainMenuHeader" onclick="toggleAccordion('Main')">
+    Main Menu
+  </button>
+  <div class="accordion-MainMenucontent" id="Main">
+    <a href="index.html"><i class="fas fa-home"></i>    Home</a>
+    <a href="portfolio.html"><i class=" fas fa-briefcase"> </i>    Past work experience</a>
+    <a href="Projects.Html"><i class="fas fa-industry"></i>   Projects</a>
+    <a href="Certificates.html"><i class=" fas fa-certificate"></i>   Certificates</a>
+  </div>
+</div>
+
+<main>
+
+  <section class="intro">
+    <p>Click on a project to expand and see details.</p>
+  </section>
+
+  <div class="projects-grid">
+
+    <!-- Project Coco -->
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/meta-data-center.jpg" alt="Meta Data Center">
+        <div class="project-overlay-header">
+          <h3>Project Coco</h3>
+        </div>
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Data Center</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">Meta (Facebook)</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">BIM Coordinator</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">9 months (Current Project)</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>Project Coco is a state-of-the-art data center developed by Meta (Facebook) in Cheyenne, Wyoming. Covering 715,000 sq ft on a 960-acre site, this facility supports AI workloads across various platforms.</p>
+        <p>The project is a high-tech investment exceeding $800 million, expected to be operational by 2027.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li><strong>Developing BIM Standards:</strong> Establishing and enforcing BIM protocols and workflows.</li>
+          <li><strong>Model Management:</strong> Overseeing the creation and maintenance of BIM models.</li>
+          <li><strong>Clash Detection & Coordination:</strong> Conducting clash detection exercises and resolving conflicts between building systems.</li>
+          <li><strong>Stakeholder Collaboration:</strong> Facilitating BIM meetings with architects, engineers, and contractors.</li>
+          <li><strong>Quality Assurance & Training:</strong> Ensuring accuracy of models and providing training on BIM tools.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Project Tuas Water Reclamation Plant -->
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/tuas-water-plant.jpg" alt="Tuas Water Reclamation Plant">
+        <div class="project-overlay-header">
+          <h3>🌊 Tuas Water Reclamation Plant</h3>
+        </div>
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Water</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">PUB</div>
+            <div class="overlay-label"><strong>Employer:</strong></div>
+            <div class="overlay-value">Jacobs</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">BIM Speciality</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">3 years</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>The Tuas Water Reclamation Plant (WRP) is part of Singapore’s Deep Tunnel Sewerage System Phase 2. It is designed to treat 800,000 cubic meters of used water daily while maximizing water recovery and reducing energy consumption.</p>
+        <p>Scheduled for completion in 2026, it will set global benchmarks for sustainable water management.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li><strong>Digital Integration:</strong> Leading BIM adoption as the Single Source of Truth across project phases.</li>
+          <li><strong>Model Coordination:</strong> Managing and integrating thousands of BIM models from multiple contractors.</li>
+          <li><strong>Clash Detection & Quality Assurance:</strong> Conducting regular clash detection and ensuring high model accuracy.</li>
+          <li><strong>Training & Support:</strong> Providing BIM training and support to over 200 personnel.</li>
+        </ul>
+        <h4>Learn More:</h4>
+        <p><a href="https://www.bentley.com/wp-content/uploads/cs-jacobs-tuas-water-ltr-en-lr.pdf" target="_blank">Read More</a></p>
+      </div>
+    </div>
+  
+    <!-- Surbana Jurong Campus -->
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/SJC.jpg" alt="Surbana Jurong Campus">
+        <div class="project-overlay-header">
+          <h3>Surbana Jurong Campus</h3>
+        </div>
+
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Integrated Urban Development</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">Surbana Jurong</div>
+            <div class="overlay-label"><strong>Employer:</strong></div>
+            <div class="overlay-value">Boustead Projects</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">BIM Lead</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">1 year 6 months</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>Surbana Jurong Campus is a cutting-edge integrated development that combines academic, commercial, and recreational facilities to create a sustainable and vibrant community. Leveraging advanced BIM methodologies, the project emphasizes efficient design coordination, digital construction workflows, and collaborative planning among diverse stakeholders.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>Led BIM coordination and digital model management across multidisciplinary teams.</li>
+          <li>Conducted regular clash detection and model audits to ensure high-quality outputs.</li>
+          <li>Facilitated BIM meetings to align project goals among architects, engineers, and contractors.</li>
+          <li>Implemented innovative digital workflows to enhance project efficiency and delivery.</li>
+        </ul>
+        <h4>Learn More:</h4>
+        <p><a href="#">Read More</a></p>
+      </div>
+    </div>
+    
+    <!-- Woodleigh Mixed Development -->
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/woodleigh.jpg" alt="Woodleigh Mixed Development">
+        <div class="project-overlay-header">
+          <h3>Woodleigh Mixed Development</h3>
+        </div>
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Residential Mixed-Use</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">SPH</div>
+            <div class="overlay-label"><strong>Employer:</strong></div>
+            <div class="overlay-value">Teambuild</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">BIM Coordinator</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">8 months</div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>Woodleigh Mixed Development is a residential mixed-use project where Teambuild Engineering acted as the subcontractor responsible for the coordination of PPVC (Prefabricated Prefinished Volumetric Construction) for the residential section. The project involved the efficient tracking, delivery, and installation of prefabricated components to ensure timely and precise assembly.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>Coordinated the delivery and installation of PPVC modules for residential units.</li>
+          <li>Managed logistics and scheduling for prefabricated components.</li>
+          <li>Ensured compliance with design specifications and quality standards.</li>
+          <li>Collaborated with the main contractor to optimize construction workflows.</li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <!-- Senja Nursing Home -->
+
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/senja.jpg" alt="Senja Nursing Home">
+        <div class="project-overlay-header">
+          <h3>Senja Nursing Home</h3>
+        </div>
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Healthcare</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">MOH</div>
+            <div class="overlay-label"><strong>Employer:</strong></div>
+            <div class="overlay-value">Teambuild</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">BIM Coordinator</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">6 months</div>
+          </div>
+        </div>
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>Senja Nursing Home is a government healthcare project under MOH aimed at modernizing patient care facilities. The project leverages advanced BIM methodologies to ensure the highest standards of construction quality and regulatory compliance in a demanding healthcare environment.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>Coordinated BIM workflows across multiple disciplines to ensure integrated project delivery.</li>
+          <li>Conducted regular clash detection and design review sessions to identify and resolve potential conflicts early.</li>
+          <li>Collaborated with consultants, contractors, and government agencies to ensure full compliance with healthcare regulations.</li>
+          <li>Implemented digital documentation and communication workflows to enhance project efficiency and quality control.</li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <!-- Valley Springs @Yishun -->
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/valleyspring.jpg" alt="Valley Springs in Yishun">
+        <div class="project-overlay-header">
+          <h3>Valley Springs</h3>
+        </div>
+
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Residential</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">HDB</div>
+            <div class="overlay-label"><strong>Employer:</strong></div>
+            <div class="overlay-value">Teambuild</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">BIM Coordinator</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">2 years</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>Valley Springs in Yishun is an HDB residential development focused on providing modern, sustainable living spaces. The project leverages advanced BIM methodologies to streamline design and construction workflows, ensuring high quality and adherence to HDB standards.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>Coordinated BIM model integration and maintained updated models throughout the project lifecycle.</li>
+          <li>Conducted clash detection and quality control to ensure compliance with HDB regulations.</li>
+          <li>Facilitated effective communication between architects, engineers, and contractors.</li>
+          <li>Managed regular model updates to reflect design modifications during the 2-year project duration.</li>
+        </ul>
+      </div>
+    </div>
+    
+<!-- Commonweath Towers -->
+
+<div class="project-card" onclick="toggleProjectDetails(this, event)">
+  <div class="project-image">
+    <img src="images/commonwealth.jpg" alt="Commonwealth Towers">
+    <div class="project-overlay-header">
+      <h3>Commonwealth Towers</h3>
+    </div>
+
+    <div class="project-overlay">
+      <div class="overlay-grid">
+        <div class="overlay-label"><strong>Industry:</strong></div>
+        <div class="overlay-value">Residential condominium</div>
+        <div class="overlay-label"><strong>Owner:</strong></div>
+        <div class="overlay-value">Wealthall Development Pte Ltd</div>
+        <div class="overlay-label"><strong>Employer:</strong></div>
+        <div class="overlay-value">SAA Architects</div>
+        <div class="overlay-label"><strong>Role in Project:</strong></div>
+        <div class="overlay-value">Technical Coordinator / Drafter</div>
+        <div class="overlay-label"><strong>Duration:</strong></div>
+        <div class="overlay-value">1 year 7 months </div>
+      </div>
+  </div>
+  <div class="project-details">
+    <h4>Project Brief:</h4>
+    <p>Commonwealth Towers is a landmark high-rise condominium project developed by SAA Architects. The project set new benchmarks in residential design and sustainability while meeting rigorous statutory requirements.</p>
+    <h4>Key Responsibilities:</h4>
+    <ul>
+      <li>Developed detailed architectural drawings—including floor plans, elevations, and sections—for statutory submissions.</li>
+      <li>Coordinated technical aspects among architects, structural engineers, and MEP teams to ensure seamless design integration.</li>
+      <li>Prepared comprehensive technical documentation and submission drawings to comply with local building regulations.</li>
+      <li>Provided drafting support and acted as a liaison between various design teams, streamlining workflow and ensuring accuracy throughout the project lifecycle.</li>
+    </ul>
+  </div>
+</div>
+
+    <!-- Sentosa Intra Island cable way -->
+
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/sentosa-cable-car.jpg" alt="Sentosa Intraisland Cable Car">
+        <div class="project-overlay-header">
+          <h3>Sentosa Intraisland Cable Car</h3>
+        </div>
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Theame Park</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">Sentosa</div>
+            <div class="overlay-label"><strong>Employer:</strong></div>
+            <div class="overlay-value">ACEPLP: Gammon</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">Drafter</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">5 months </div>
+          </div>
+      </div>
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>This project involves the design and construction of a state-of-the-art cable car system on Sentosa Island, aimed at connecting various attractions and facilities to enhance visitor accessibility. As part of the project team, I served as a CAD/BIM Technician, responsible for preparing detailed shop drawings and construction documentation to ensure that all design and technical requirements were met with precision.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>Developed precise shop drawings and construction details for the cable car system.</li>
+          <li>Collaborated with the main contractor to integrate design modifications and resolve technical challenges.</li>
+          <li>Ensured that all documentation adhered to regulatory standards and project specifications.</li>
+          <li>Supported coordination between multiple design disciplines to streamline project delivery.</li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <!-- Jurong East Mall (JEM) -->
+    <div class="project-card" onclick="toggleProjectDetails(this, event)">
+      <div class="project-image">
+        <img src="images/jurong-east-mall.jpg" alt="Jurong East Mall">
+        <div class="project-overlay-header">
+          <h3>Jurong East Mall</h3>
+        </div>
+        <div class="project-overlay">
+          <div class="overlay-grid">
+            <div class="overlay-label"><strong>Industry:</strong></div>
+            <div class="overlay-value">Commersial</div>
+            <div class="overlay-label"><strong>Owner:</strong></div>
+            <div class="overlay-value">Lendlease</div>
+            <div class="overlay-label"><strong>Employer:</strong></div>
+            <div class="overlay-value">ACEPLP: SAA Architects</div>
+            <div class="overlay-label"><strong>Role in Project:</strong></div>
+            <div class="overlay-value">Drafter</div>
+            <div class="overlay-label"><strong>Duration:</strong></div>
+            <div class="overlay-value">8 months </div>
+          </div>
+      </div>
+      </div>
+      <div class="project-details">
+        <h4>Project Brief:</h4>
+        <p>Jurong East Mall is a high-profile retail and commercial development spearheaded by Lendlease. In this project, I supported SAA Architects as part of ACEPLP, delivering detailed architectural drawings and comprehensive shop drawings that facilitated accurate construction documentation and effective design coordination.</p>
+        <h4>Key Responsibilities:</h4>
+        <ul>
+          <li>Prepared precise architectural and technical drawings for statutory submissions and tender documentation.</li>
+          <li>Collaborated with multidisciplinary teams to ensure design integrity and compliance with industry standards.</li>
+          <li>Coordinated revisions and updates based on feedback from architects, engineers, and clients.</li>
+          <li>Assisted in quality control measures, ensuring all drawings met required regulatory and design specifications.</li>
+        </ul>
+      </div>
+    </div>
+    
+
+
+  </div>
+</main>
+    
+    
+<script>
+function toggleProjectDetails(element, event) {
+  // Prevent event bubbling so inner elements don't trigger additional toggles
+  event.stopPropagation();
+  
+  // Collapse all other expanded project cards
+  document.querySelectorAll(".project-card.expanded").forEach(card => {
+    if (card !== element) {
+      card.classList.remove("expanded");
+    }
+  });
+  
+  // Toggle the 'expanded' class on the clicked project card
+  element.classList.toggle("expanded");
+}
+
+function toggleAccordion(id) {
+      var content = document.getElementById(id);
+      content.classList.toggle("active");
+    }
+
+</script>
+    
+</body>
+</html>
