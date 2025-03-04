@@ -1,208 +1,154 @@
-
 /* Base Reset */
 * {
-    box-sizing: border-box;
-  }
-  body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Example font */
-  }
-  
-  /* Header Section */
-  .projects-header {
-    background-color: #003366;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative; /* Ensures child elements are positioned relative to the header */
-    z-index: 1;         /* Keeps header above normal flow items if needed */
-  }
-  .projects-header h1 {
-    margin: 0 0 10px;
-  }
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.projects-header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.projects-header h1 {
+  margin: 0 0 10px;
+}
 
 /* Main Menu Container */
 .project-mmitem {
-    /* Keep it in normal flow so it sits below the heading */
-    width: 95%;
-    margin: 0 auto;    /* Center horizontally */
-    max-width: 600px;  /* Optional: limit width if desired */
+  width: 95%;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  padding: 10px;
+}
 
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    padding: 10px;
-  }
-  
 /* Main Menu Header (Button) */
 .project-mmheader {
-    background: #3f4375;
-    color: white;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
+  background: #3f4375;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 /* Main Menu Content (Accordion) */
 .project-mmcontent {
-    display: none;           /* Hidden by default */
-    background: #f4f4f4;
-    padding: 10px;
-    margin-top: 10px;        /* Add spacing below the button */
-    border-left: 3px solid #003366;
-    border-radius: 5px;
-  }
-  
-  /* Show the menu when active */
-  .project-mmcontent.active {
-    display: block;
-  }
-  
-  /* Links inside the menu */
-  .project-mmcontent a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color: #003366;
-    font-weight: bold;
-  }
-  
-  .project-mmcontent a:hover {
-    background: #ddd;
-  }
-  
-  /* Main Content (Below Header) */
-  main {
-    padding: 20px;
-  }
-  .project-mmcontent a:hover {
-    background: #ddd;
-  }
-  
-  /* Main Content */
-  main {
-    padding: 20px;
-  }
+  display: none;
+  background: #f4f4f4;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 3px solid #003366;
+  border-radius: 5px;
+}
+.project-mmcontent.active {
+  display: block;
+}
+.project-mmcontent a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+.project-mmcontent a:hover {
+  background: #ddd;
+}
 
-
-
-
-
-/* Project Grid */
+/* 🔹 Projects Grid - Fixed for Last Two Items */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
-  
-  .project-overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.6); /* Transparent white */
-    backdrop-filter: blur(5px); /* Modern glass effect */
-    padding: 10px;
-    transition: 0.3s ease-in-out;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-  }
-  
-  /* New Grid inside Overlay for Proper Alignment */
-  .overlay-grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 5px;
-    text-align: right;
-  }
-  
-  .overlay-label {
-    font-weight: bold;
-    text-align: right;
-  }
-  
-  .overlay-value {
-    text-align: left;
-  }
-  
-  /* Project Card */
-  .project-card {
-    position: relative;
-    background: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Project Image */
-  .project-image {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-  }
-  
-  .project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  /* Overlay Header (Project Name) */
-  .project-overlay-header {
-    position:absolute;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    background: rgba(255, 255, 255, 0.9);
-    border-width: 5px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Hover Effect - Overlay becomes more visible */
-  .project-card:hover .project-overlay {
-    background: rgba(255, 255, 255, 1);
-  }
-  
-  /* Project Details (Initially Hidden) */
-  .project-details {
-    display: none;
-    padding: 10px;
-    text-align: left;
-    background: #f9f9f9;
-    border-radius: 8px;
-    margin-top: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Expand Effect on Click */
-  .project-card.expanded {
-    height: auto;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-card.expanded .project-details {
-    display: block;
-    padding-top: 10px;
-  }
-  
-  /* Expand Image when Clicked */
-  .project-card.expanded img {
-    height: 200px;
-    transition: height 0.3s ease-in-out;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted for better wrapping */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  align-items: stretch; /* Ensures equal height for all */
+}
+
+/* 🔹 Project Card - Fixed Layout */
+.project-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Ensures uniform height */
+}
+
+/* Project Image */
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  flex-grow: 1; /* Ensures images don't cause uneven height */
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay Header (Project Name) */
+.project-overlay-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Fix Last Two Items Not Aligning */
+.project-card:nth-last-child(-n+2) {
+  align-self: stretch; /* Forces last two to align properly */
+}
+
+/* Project Details (Initially Hidden) */
+.project-details {
+  display: none;
+  padding: 10px;
+  text-align: left;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Expand Effect on Click */
+.project-card.expanded {
+  height: auto;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+.project-card.expanded .project-details {
+  display: block;
+  padding-top: 10px;
+}
+
+/* Expand Image when Clicked */
+.project-card.expanded img {
+  height: 200px;
+  transition: height 0.3s ease-in-out;
+}
