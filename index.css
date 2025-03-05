@@ -93,6 +93,19 @@
     color: #666;
 }
 
+.Lessons
+{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Lessons-content-header
+{
+    margin-left: -27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Sidebar Navigation */
 .sidebar-nav a {
     display: block;
