@@ -172,4 +172,13 @@
     font-size: 1em;
     line-height: 1.4;
   }
+
+  .page-footer {
+    text-align: center;
+    padding: 20px;
+    background: #003366;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+}
   
