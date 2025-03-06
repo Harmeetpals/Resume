@@ -2,154 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>projects</title>
-  <link rel="stylesheet" href="AboutMe.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <title>Home - BIM Specialist</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Google Fonts & Font Awesome (optional) -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-  <header class="aboutme-header">
-    <h1>ABOUT ME</h1>
+<!-- Full-Width Page Header -->
+<header class="page-header">
+  <h1>HARMEET PAL SINGH</h1>
+  <p>Welcome to my resume!</p>
   
-    <div class="aboutme-MainMenuItem">
-      <button class="aboutme-MainMenuHeader" onclick="toggleAccordion('Main')">
-        Main Menu
-      </button>
-      <div class="aboutme-MainMenucontent" id="Main">
-        <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        <a href="projects.html"><i class="fas fa-industry"></i> Projects</a>
-        <a href="pastexperience.html"><i class="fas fa-briefcase"></i> Past Work Experience</a>
-        <a href="skills.html"><i class="fas fa-tasks"></i> Skills</a>
-        <a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a>
-      </div>
+  <nav class="navbar">
+    <a href="AboutMe.html"><i class="fas fa-user"></i> About Me</a>
+    <a href="pastexperience.html"><i class="fas fa-briefcase"></i>Past xperience</a>
+    <a href="projects.html"><i class="fas fa-industry"></i> Projects</a>
+    <a href="skills.html"><i class="fas fa-tasks"></i> Skills</a>
+
+    <a href="certificates.html"><i class="fas fa-certificate"></i> Certificates (U/C)</a>
+    
+  </nav>
+</header>
+
+ <!-- Timeline Section -->
+ <section class="timeline-section">
+  <h2>My Professional Journey</h2>
+  <div class="timeline-grid">
+    <!-- CAD Drafter -->
+    <div class="timeline-year">3.5 yrs</div>
+    <div class="timeline-role">
+      <h3>CAD Drafter</h3>
+      <p>Launched my career creating detailed architectural and construction drawings.</p>
     </div>
-  </header>
-
-<main class="profile-container">
-  <!-- Sidebar -->
-  <aside class="profile-sidebar">
-    <div class="profile-pic">
-      <img src="Profile/profile.jpg" alt="Profile Picture">
+    <!-- Quantity Surveyor -->
+    <div class="timeline-year">1.5 yrs</div>
+    <div class="timeline-role">
+      <h3>Quantity Surveyor</h3>
+      <p>Gained experience in cost estimation and tender management.</p>
     </div>
-    <div class="profile-summary">
-      <h1>HARMEET PAL SINGH</h1>
-      <p>BIM Specialist</p>
-      <p>13 years in Singapore</p>
+    <!-- BIM Modeler -->
+    <div class="timeline-year">2 yrs</div>
+    <div class="timeline-role">
+      <h3>BIM Modeler</h3>
+      <p>Transitioned into 3D modeling and digital workflows.</p>
     </div>
-    <div class="contact-info">
-      <p><i class="fas fa-envelope"></i> harmeetpals@hotmail.com</p>
-      <p><i class="fas fa-phone"></i> (+65) 93835475</p>
-      <p><i class="fas fa-map-marker-alt"></i> Driving license: 3A</p>
-      <p><i class="fas fa-map-marker-alt"></i> Singapore</p>
+    <!-- BIM Coordinator -->
+    <div class="timeline-year">6 yrs</div>
+    <div class="timeline-role">
+      <h3>BIM Coordinator</h3>
+      <p>Able to coordinate with all sub-contractors (Arch, Stru, & MEP). Learned different coordination tools. Start exploring into 4D simulation and tracking of PPVC and other precast components, Dynamo, and different visualization tools. </p>
     </div>
-  </aside>
+    <!-- BIM Lead -->
+    <div class="timeline-year">1.5 yrs</div>
+    <div class="timeline-role">
+      <h3>BIM Lead</h3>
+      <p>Learned how to manage and lead a team of BIM modeler. A good challenging experience. Explored on different leadership techniques to get better results</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Main Content -->
-  <section class="profile-content">
-    <!-- Introduction Card -->
-    <article class="section-card">
-      <h2>Introduction</h2>
-      <p>
-        I am a dedicated <strong>BIM Specialist</strong> with over <strong>13 years</strong> of experience in Singapore's dynamic construction industry. My passion for BIM and Integrated Digital Delivery (IDD) drives my commitment to enhancing workflows and delivering innovative, technology‑driven solutions throughout the project lifecycle.
+<!-- Main Content (stretches left to right) -->
+<main class="main-content">
+  <section class="work-experience">
+    <h2>Fortis Construction <span>(June 2024 – Present)</span></h2>
+    <h3>Project: Meta Data Center</h3>
+    <h4>Role: BIM Coordinator</h4>
+    
+    <p>
+      Serving as a <strong>BIM Coordinator</strong> on the high-profile 
+      <strong>Meta Data Center</strong> project, I am responsible for 
+      overseeing BIM deliverables across multiple disciplines and 
+      implementing cutting-edge digital workflows to drive project 
+      efficiency and collaboration.
+    </p>
+  
+    <ul>
+      <p class="Lessons-content-header">
+        <strong>1️⃣ Coordination of BIM:</strong></p>
+        <p>Spearheaded the integration 
+        of architectural, structural, and MEP models, ensuring that 
+        all stakeholders worked with the latest information in a 
+        common data environment.
+        </p>
+      <p class="Lessons-content-header">
+        <strong>2️⃣ Design Update Checks:</strong></p> <p>Conducted regular reviews 
+        of design updates to maintain accuracy and alignment with 
+        evolving project requirements, reducing conflicts and 
+        minimizing rework.
       </p>
-    </article>
-
-    <!-- Career Goals Card -->
-    <article class="section-card">
-      <h2>Career Goals</h2>
-      <p>
-        My career goal is to be part of a dynamic team that implements comprehensive <strong>Building Information Management</strong> processes throughout every phase of a project. I am committed to seeing projects through from the initial conceptual stage to final handover, ensuring that every deliverable is meticulously managed and presented.
+      <p class="Lessons-content-header">
+        <strong>3️⃣ Consistency Verification:</strong></p><p>Verified that BIM 
+        models adhered to project standards and contractual obligations, 
+        identifying discrepancies early and resolving them to keep the 
+        project on track.
       </p>
-      <p>
-        I am passionate about leveraging advanced digital construction methodologies and <strong>Integrated Digital Delivery (IDD)</strong> to streamline workflows, enhance collaboration, and bridge the gap between design and construction. By creating innovative, production‑focused initiatives, I strive to make project information clear and accessible for clients, subcontractors, and internal teams alike.
+      <p class="Lessons-content-header">
+        <strong>4️⃣ Virtual Reality (VR) Collaboration:</strong> </p><p> 
+        immersive VR tools to help stakeholders visualize complex 
+        design elements, fostering better decision-making and a more 
+        comprehensive understanding of project details.
       </p>
-      <p>
-        With over <strong>13 years</strong> of experience working in Singapore, I continuously seek opportunities to improve industry practices through technology and process optimization. My commitment to learning and adopting new tools fuels my drive to transform project delivery and elevate overall performance in the construction sector.
+      <p class="Lessons-content-header">
+        <strong>5️⃣ Integrated Digital Delivery (IDD) via ACC:</strong></p> 
+        <p>Leveraged <em>Autodesk Construction Cloud (ACC)</em> to 
+        facilitate real-time data sharing, model updates, and 
+        coordinated deliverables, ensuring seamless communication 
+        between design and construction teams.
       </p>
-    </article>
+      <section>
+        <div class="Lessons">
+      <h3>
+        Lessons Learned
+      </h3>
+      <p class="Lessons-content-header">
+        1️⃣ MEP Coordination & Accessibility</p>
+      <li>Developed a structured approach to MEP coordination, ensuring smooth integration between Mechanical, Electrical, and Plumbing systems.</li>
+      <li>Gained hands-on experience in ceiling accessibility planning, considering installation feasibility and long-term maintenance needs.</li>
+      <li>Understood model assumptions and the importance of early space planning to avoid clashes and ensure service accessibility.</li>
+      
+      <p class="Lessons-content-header">
+        2️⃣ Pull Planning & Task Management</p>
+      <li>Implemented pull planning techniques, allowing me to plan my days and weeks ahead efficiently, ensuring timely completion of tasks.</li>
+      <li>Learned how to break down project milestones into achievable deliverables, enhancing workflow predictability and productivity.</li>
 
-    <!-- Additional Information Card -->
-    <article class="section-card">
-      <h2>Additional Information</h2>
-      <div class="additional-grid">
-        <div class="additional-item">
-          <h3>Hobbies</h3>
-          <ul>
-            <li>Playing with my Kids</li>
-            <li>Photography</li>
-            <li>Gaming</li>
-            <li>Soccer</li>
-          </ul>
-        </div>
-        <div class="additional-item">
-          <h3>Interests</h3>
-          <ul>
-            <li>Traveling</li>
-            <li>Science and Technology</li>
-            <li>Documentaries</li>
-            <li>History</li>
-            <li>Conspiracy Theories</li>
-            <li>Marvel</li>
-            <li>Star Wars</li>
-          </ul>
-        </div>
-        <div class="additional-item">
-          <h3>My Inspirations</h3>
-          <h4>Guru Gobind Singh Ji </h4>
-          <p>Guruji was a visionary leader, who instelled strength and resiliance in his followers. In 1699, they founded the khalsa panth and transformed ordinary people into saint-soilders
-            who would stand for truth and justice. Their leadership was based on service and equality. They lead by example, teaching his followers to remain fearless in the face of oprression. 
-            His ability to unite people and inspire them to rise against tyranny makes him one of history’s greatest leaders.
-          </p>
-          <br>
-          <p>
-            Despite his immense wisdom and strength, Guru Gobind Singh Ji remained humble and saw himself as a servant of God rather than a ruler. He never sought personal power or wealth but instead dedicated his life to the well-being of his people. Even after forming the Khalsa, he humbly took Amrit (baptism) from the Panj Pyare (Five Beloved Ones), showing that no one, not even the Guru, is above the principles he established. His humility teaches us that true leadership is about service, not superiority.          </p>
-          <br>
-          Guru Gobind Singh Ji was not only a warrior and leader but also a profound poet. His works, written in Braj, Persian, and Punjabi, are filled with wisdom, valor, and devotion. His compositions, such as Jaap Sahib, Chandi Di Var, and Zafarnama, inspire spiritual awakening and resilience. His poetry embodies the warrior spirit while promoting divine love and universal brotherhood. Zafarnama, his letter to the Mughal Emperor Aurangzeb, is a masterpiece that conveys how truth ultimately triumphs over falsehood, even in the face of oppression.
-          
-          </p>
+      <p class="Lessons-content-header">
+        3️⃣ Managing Trade Partners & Deliverables</p>
+        <li>Improved coordination with trade partners, ensuring that each stakeholder met their deadlines and deliverables aligned with the project schedule.</li>
+        <li>Developed an effective strategy for tracking model updates and verifying that changes were communicated and implemented accurately.</li>
+      <p class="Lessons-content-header">
+        4️⃣ Electrical & Mechanical System Coordination</p>
+        <li>Gained in-depth knowledge of electrical components, understanding which elements are fixed and which can be adjusted during coordination.</li>
+        <li>Learned what to watch out for in mechanical systems, ensuring that ducts, pipes, and equipment were properly routed without conflicts.</li>
+        <li>Developed a keen eye for identifying clashes between different services early, reducing rework and improving overall project efficiency.</li>
+ 
+      <p class="Lessons-content-header">
+        5️⃣ Technology Infrastructure Awareness</p>
+        <li>Became aware of technology infrastructure dependencies, particularly in ensuring network stability and avoiding cabling issues that could lead to collapses.</li>
+        <li>Developed an understanding of critical pathways for technology services, allowing for better planning and coordination with IT specialists.</li>
 
-            <h4>Alberty Einstein</h4>
-          <p>As a child, Albert Einstein struggled with traditional education methods
-          , often seen as slow by his teachers. His unconventional way of thinking and reluctant to follow rote memorization
-        made him appear disingaaged. However, his curiosity and deep analytical mind allowed him to explore concepts beyond his years. 
-      Rather than accepting limitations imposed by a system, he nurtured his own learning through indipendent thinking, 
-    ultimatly leading a ground breaking discovery in physics. His story serves as reminder that true inteligence is not meassured 
-    by conventional standards but by ones ability to think differently.</p>
-<br>One of Einstein’s greatest contributions was his theory of relativity, which introduced the concept that time is not absolute but relative. This idea is now a fundamental part of many scientific and technological advancements, including its impact on BIM. In BIM, the 4D dimension integrates time into 3D models, allowing for project scheduling, sequencing, and simulation of construction phases. The very concept of 4D BIM—where we visualize changes over time—aligns with Einstein’s vision of time as a flexible dimension rather than a fixed entity. His work reminds me that even in a technical field like BIM, innovation stems from bold, foundational ideas that change how we perceive and manage complex projects.</p>
+      <p class="Lessons-content-header">
+        6️⃣ Communication & Decision-Making in Coordination Meetings</p>
+        <li>Strengthened my ability to articulate and frame the problem statement in coordination meetings.</li>
+        <li>Improved at explaining the driving factors behind proposed changes and the solutions required to achieve project goals.</li>
+        <li>Learned to effectively gain acceptance from the design team, ensuring alignment and approval for necessary modifications.</li>
+      <p class="Lessons-content-header">
+        7️⃣ Report Development for Design Solutions</p>
+        <li>Developed comprehensive reports with plans, sections, and elevations, clearly identifying proposed solutions and the rationale behind design changes.</li>
+        <li>Enhanced my ability to present technical challenges visually, making it easier for teams to understand and address coordination issues.</li>
+    </div>
 
-        </div>
-
-        <div class="additional-item">
-          <h3>Favorite Quotes</h3>
-          <p>ਨਹਿ ਭੈ ਮਾਨੁਖ ਕੇ ਮਨ ਮੈ॥
-            ਕਾਹੂ ਕੋ ਬਧ ਕਰਤ ਨਹਿ ਜਨ ਮੈ॥
-            <p></p>
-            <br>
-          <strong>Occam's Razor:</strong> If multiple theories explain a phenomenon equally well, the simplest one (i.e., the one with the fewest variables or complexities) is likely to be correct.</br>
-          <br><strong>Quote: </strong>"Do not focus on just one tree; embrace the vastness of the forest, the strength of the mountains, the flow of the rivers, and the wisdom of every tree that stands beside it." </br>
-          <br><strong>Albert Einstein: </strong>"Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution."</br>
-          <br><strong>Albert Einstein: </strong>"Try not to become a man of success, but rather try to become a man of value."</p>
-          </p>
-        </div>
-      </div>
-    </article>
+    </ul>
   </section>
-</main>
+  
+
+<!-- Floating Sidebar (Underneath the header, on the right) -->
+<aside class="sidebar">
+  <div class="profile-pic">
+    <img src="Profile/profile.jpg" alt="Profile Picture">
+  </div>
+  <div class="profile-summary">
+
+    <h2>BIM Specialist</h2>
+    <p>13+ years in Singapore</p>
+    <h4>Contact Information</h4>
+    <p><i class="fas fa-envelope"></i> harmeetpals@hotmail.com</p>
+    <p><i class="fas fa-phone"></i> (+65) 93835475</p>
+    <h4>Education</h4>
+    <p><i class ="fas fa-certificate"></i> B.Sc Quantity Surverying</p>
+    <p><i class ="fas fa-certificate"></i> Specialist Diploma in BIM</p>
+  </div>
+
+</aside>
 
 <footer class="page-footer">
-
-  <p>Hello World!</p>
-
+  <p>ਨਾਨਕ ਨਾਮ ਚੜ੍ਹਦੀ ਕਲਾ, ਤੇਰੇ ਭਾਣੇ ਸਰਬੱਤ ਦਾ ਭਲਾ ॥</p>
 </footer>
 
-<script>
-  function toggleAccordion(id) {
-    var content = document.getElementById(id);
-    content.classList.toggle("active");
-  }
-</script>
 </body>
 </html>
-    
-
